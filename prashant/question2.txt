@@ -1,1 +1,7 @@
-Who are you
+2. What does the git `ls-files` command do, and what information does its output provide regarding the state of files in a Git repository?
+The git ls-files command lists all files in the Git repository's index (staging area). It shows:
+
+Tracked Files: Files currently being tracked by Git.
+File Paths: Relative paths of tracked files.
+State: Optionally, it can show staged, ignored, or untracked files with flags like --others or --ignored.
+It helps inspect which files are under version control.

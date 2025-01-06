@@ -1,0 +1,30 @@
+How to set multiple remote repositories for the same project? Explain the use case. you should have a working demo of it.
+Setting Multiple Remotes for the Same Project
+You can add multiple remotes using git remote add. This allows pushing and pulling from different repositories (e.g., GitHub, GitLab, or a backup server).
+
+Steps:
+Add a primary remote (e.g., origin):
+
+bash
+Copy code
+git remote add origin <primary-remote-url>
+Add a secondary remote (e.g., backup):
+
+bash
+Copy code
+git remote add backup <secondary-remote-url>
+Verify remotes:
+
+bash
+Copy code
+git remote -v
+Push to a specific remote:
+
+bash
+Copy code
+git push origin main
+git push backup main
+Use Case:
+Team Collaboration: Work on GitHub as the primary repository and use GitLab as a backup.
+Multi-platform Projects: Host the same codebase on different services for redundancy or client-specific workflows.
+Would you like me to simulate this setup with a worki

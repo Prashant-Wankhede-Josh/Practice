@@ -1,0 +1,18 @@
+How to un-stage changes from the staged area. write command for it.
+To unstage changes from the staging area, use:
+
+bash
+Copy code
+git reset <file>
+Examples:
+Unstage a specific file:
+
+bash
+Copy code
+git reset file.txt
+Unstage all staged files:
+
+bash
+Copy code
+git reset
+This moves the changes back to the working directory without deleting them.
